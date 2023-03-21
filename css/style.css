@@ -157,6 +157,7 @@ body {
 
 .darktxt {
     color: black;
+    font-size: 15px;
 }
 
 .dark {
@@ -225,7 +226,8 @@ a:after {
 
 .logo_artiste {
     border-radius: 50%;
-    width: 50%;
+    width: 75%;
+    max-width: 200px;
 }
 
 
