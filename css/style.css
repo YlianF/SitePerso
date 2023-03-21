@@ -236,9 +236,6 @@ a:after {
 
 
 
-
-
-
 main#carousel {
     grid-column: 1 / 8;
     max-width: 100vw;
@@ -252,7 +249,7 @@ main#carousel {
     --items: 5;
     --middle: 3;
     --position: 1;
-    pointer-events: none;
+    pointer-events: all;
 }
 
 div.item {
