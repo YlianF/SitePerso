@@ -16,25 +16,24 @@
 <body>
 
     <div id="header" class="container-fluid dark">
-        <img src="/img/linkool.jpg" alt="photo de profil" style="height: 100px; width: auto; border-radius: 50%;">
-        <h1 id="nom">YLIAN FATMI</h1>
+        <div>
+            <div id="pp">   
+                <img src="/img/linkool.jpg" alt="photo de profil"
+                    style="height: 100px; width: auto; border-radius: 50%;">
+            </div>
+
+            <div id="nom" style="vertical-align: super;">
+                <h1 id="y" class="nom"></h1>
+                <h1 id="f" class="nom"></h1>
+            </div>
+        </div>
     </div>
 
 
-    <div class="container-fluid light" style="padding-top: 100px; margin-bottom: 100px;">
-        <div class="row" style="margin-bottom: 20px;">
-            <h1>Bienvenue sur mon site !</h1>
-        </div>
+
+    <div class="container-fluid light" style="padding-top: 150px; margin-bottom: 150px;">
         <div class="row">
-            <p>Ici, vous retrouverez un tas d'infos sur moi !</p>
-            <p>Ce site me servira de portfolio, mais c'est avant tout un projet personnel que j'avais en tête depuis un
-                moment</p>
-            <p style="margin-top: 10px;">Programmé en HTML/CSS/Javascript, je voulais surtout mettre à défi mes
-                compétences de designer et essayer de mettre un site en ligne</p>
-            <p>J'ai reservé le nom de domaine chez OVH et le site est hébergé sur GitHub (certes gratuit mais ne permet
-                pas d'avoir un back end)</p>
-            <p>Ca m'a semblé être l'occasion parfaite pour mon premier site : quelque chose de simple</p>
-            <p style="margin-top: 20px;">Bref, j'espère que ça vous plaiera !</p>
+            <h1>Bienvenue sur mon site !</h1>
         </div>
     </div>
 
@@ -49,7 +48,7 @@
                     style="height: 250px; width: auto; border-radius: 50%;">
             </div>
             <div class="col-sm-12 col-md-6 acentrer">
-                <p class="centrer">Ylian Fatmi, 19 ans, célibataire et libre comme l'air, étudiant en BUT informatique
+                <p class="centrer">Ylian Fatmi, 19 ans, étudiant en BUT informatique
                     (2ème année)</p>
             </div>
         </div>
@@ -104,7 +103,6 @@
             </p>
             <p style="margin-top: 10px;">Le jeu en co-opération avec mon frère et mes amis est sans doutes aussi un
                 point qui m'a fait aimer les jeux vidéo</p>
-            <p style="margin-top: 80px;">Mes liscences de jeux préférées :</p>
         </div>
 
 
@@ -129,7 +127,7 @@
 
                     <div class="item">
                         <a class="darktxt" data-action="click" data-argument="1">
-                            <h2>Voleur Fantôme</h2>
+                            <h2>Forum Persona 5</h2>
                             <img src="/img/linkool.jpg">
                             <p>Site communautaire sur Persona 5 (Symfony)</p>
                         </a>
@@ -169,6 +167,12 @@
             </div>
 
         </div>
+        <div class="row">
+                <a href="https://github.com/YlianF" class="btn btn-outline-dark darktxt">
+                    <p>Voir plus sur GitHub !</p>
+                    <i class="fa-brands fa-github" style="font-size: 60px;"></i>
+                </a>
+        </div>
     </div>
 
     <script>
@@ -193,6 +197,22 @@
 
             document.getElementById(arg).checked = true;
         }
+
+        const y = document.getElementById('y');
+        const f = document.getElementById('f');
+
+        setTimeout('y.textContent = "Y"', 200);
+        setTimeout('y.textContent = "Y L"', 280);
+        setTimeout('y.textContent = "Y L I"', 360);
+        setTimeout('y.textContent = "Y L I A"', 440);
+        setTimeout('y.textContent = "Y L I A N"', 520);
+        setTimeout('f.textContent = "F"', 600);
+        setTimeout('f.textContent = "F A"', 680);
+        setTimeout('f.textContent = "F A T"', 760);
+        setTimeout('f.textContent = "F A T M"', 840);
+        setTimeout('f.textContent = "F A T M I"', 920);
+
+
     </script>
 
 
@@ -205,17 +225,13 @@
         </div>
 
         <div class="row">
-            <div class="col-sm-12 col-md-4" style="margin-bottom: 15px;">
+            <div class="col-sm-12 col-md-6" style="margin-bottom: 15px;">
                 <a href="https://www.linkedin.com/in/ylian-fatmi-888729239/" class="btn btn-outline-dark">
                     <i class="fa-brands fa-linkedin" style="font-size: 60px;"></i>
                 </a>
             </div>
-            <div class="col-sm-12 col-md-4" style="margin-bottom: 15px;">
-                <a href="https://github.com/YlianF" class="btn btn-outline-dark">
-                    <i class="fa-brands fa-github" style="font-size: 60px;"></i>
-                </a>
-            </div>
-            <div class="col-sm-12 col-md-4" style="margin-bottom: 15px;">
+
+            <div class="col-sm-12 col-md-6" style="margin-bottom: 15px;">
                 <a href="mailto:yli.fatmi@gmail.com" class="btn btn-outline-dark">
                     <i class="fa fa-envelope" style="font-size: 60px;"></i>
                 </a>

@@ -129,9 +129,10 @@ table {
     border-spacing: 0;
 }
 
-
-
-
+html,body{
+    width:100%;
+    height:100%;
+    }
 
 
 
@@ -139,11 +140,13 @@ table {
 body {
     font-family: Chillax-Bold;
     text-align: center;
+    margin: auto;
 }
 
-#header, #footer {
+#footer {
     padding-top: 20px;
     padding-bottom: 20px;
+    background-color: black;
 }
 
 #content {
@@ -151,8 +154,28 @@ body {
     margin-top: 50px;
 }
 
-#nom {
-    text-shadow:0 4px 0 #00ecff, 0 -4px 0 #ff4045;
+#pp, #nom {
+    text-align: center;
+    display: inline-block;
+}
+
+#header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: 100%;
+    background-color: black;
+    animation: slidein 1s linear 1.5s 1 normal forwards;
+}
+
+
+@keyframes slidein {
+    100% {
+        min-height: 15%;
+    }
+}
+
+#y, #f {
+    text-shadow: #009f13 6px 0px;
 }
 
 .darktxt {
@@ -206,8 +229,8 @@ a:after {
     height: 500px;
     padding-top: 30px;
     background-image:
-    linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%),
-    url('/img/music.png');
+        linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%),
+        url('/img/music.png');
     background-position: right;
     background-size: 500px 500px;
     background-repeat: no-repeat;
@@ -217,8 +240,8 @@ a:after {
     height: 500px;
     padding-top: 30px;
     background-image:
-    linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 110%, rgba(255, 255, 255, 0) 100%),
-    url('/img/video_games.png');
+        linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgb(255, 255, 255) 110%, rgba(255, 255, 255, 0) 100%),
+        url('/img/video_games.png');
     background-position: left;
     background-size: 500px 500px;
     background-repeat: no-repeat;
